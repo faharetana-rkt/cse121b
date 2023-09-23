@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 const fullName = 'Rakotomamonjy Faharetana Andriatsiva';
 const currentYear = '2023';
-const profilePicture = 'images/me.jpg'; 
+const profilePicture = 'images/me.jpg';
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById('name');
@@ -22,6 +22,16 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
 let foods = ['pizza', 'pasta', 'french fries', 'mashed potatoes', 'fried rice', 'fried chicken'];
+foodElement.innerHTML = foods;
+let favFood = 'pringles';
+foods.push(favFood);
+foodElement.innerHTML += `<br>${foods}`;
+foods.shift();
+foodElement.innerHTML += `<br>${foods}`;
+foods.pop();
+foodElement.innerHTML += `<br>${foods}`;
+
+
 
 
 
