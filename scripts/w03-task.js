@@ -61,15 +61,20 @@ document.querySelector("#year").innerHTML = currentYear;
 let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 document.querySelector("#array").innerHTML = myArray;
 /* Output Odds Only Array */
+/*
 let oddNumbers = myArray.filter((number) => (number % 2) != 0);
 document.querySelector("#odds").innerHtml = oddNumbers;
+*/
+document.querySelector("#odds").innerHTML = myArray.filter((number) => (number % 2) != 0);
 
-let evenNumbers = myArray.filter((number) => (number % 2) = 0);
-document.querySelector("#evens").innerHTML = evenNumbers;
+
 /* Output Evens Only Array */
-
+let evenNumbers = myArray.filter((number) => (number % 2) === 0);
+document.querySelector("#evens").innerHTML = evenNumbers;
 /* Output Sum of Org. Array */
+document.querySelector("#sumOfArray").innerHTML = myArray.reduce((total, number) => total + number, 0);
 
 /* Output Multiplied by 2 Array */
-
+document.querySelector("#multiplied").innerHTML = myArray.map(number => number * 2);
 /* Output Sum of Multiplied by 2 Array */
+document.querySelector("#sumOfMultiplied").innerHTML = myArray.map(number => number * 2).reduce((total, number) => total + number, 0);
