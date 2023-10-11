@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Add your code here
+    let sexion = {
+         name: 'Sexion d\'Assaut',
+        nationality: 'French',
+        genre: 'rap',
+        members: 7,
+        formed: 2002,
+        split: 2013,
+        albums: [{
+            name:"l'école des points vitaux",
+            date: 2010 }, 
+            {
+            name: "les chroniques du 75",
+            date: 2009 },
+            {
+            name: "en attendant l'apogée",
+            date: 2012 },
+            ],
+    }
+    bandInfo = `La ${sexion.name} est un groupe de rap ${sexion.nationality} qui fait du ${sexion.genre}. Elle est composée de ${sexion.members} membres et s'est formée en ${sexion.formed}. Malheureusement s'est séparée en ${sexion.split}. Ci-après une liste de leurs albums: 1- ${sexion.albums[0].name} -- ${sexion.albums[0].date} 2- ${sexion.albums[1].name} -- ${sexion.albums[1].date} 3- ${sexion.albums[2].name} -- ${sexion.albums[2].date}`;
+
+
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
