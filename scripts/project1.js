@@ -1,4 +1,4 @@
-import {fetchPokémonData} from "./functions.js"
+//import {fetchPokémonData} from "./functions.js"
 
 // Global variables
 const pokémons = document.querySelector("#pokémons");
@@ -10,6 +10,12 @@ const imgElement = document.createElement("img");
 imgElement.src = "/images/pokémon.png";
 imgElement.alt = "Pokémon Logo";
 logoElement.appendChild(imgElement);
+
+async function fetchPokémonData(url) {
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+}
 
 // Create a function to fetch a list of Pokémon from the PokéAPI
 async function fetchPokémonList() {
