@@ -7,7 +7,7 @@ const pokémonList = [];
 //Creating the pokémon logo
 const logoElement = document.querySelector("#logo");
 const imgElement = document.createElement("img");
-imgElement.src = "/images/pokémon.png";
+imgElement.src = "images/pokémon.png";
 imgElement.alt = "Pokémon Logo";
 logoElement.appendChild(imgElement);
 
