@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@300&display=swap');
+
+
+#filterBy {
+    appearance: none;
+    display: flex;
+    padding: .5rem;
+    background-color: #eee;
+    color: #444;
+    font-weight: 700;
+    margin: 1rem auto;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+#filterBy option:disabled {
+    font-style: italic;
+    padding: 1rem;
+    background-color: #111;
+    color: #eee;
+}
+
+#pokémons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: .5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#pokémons div {
+    height: 250px;
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #F0F8FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px 0 50px 0;
+}
+
+#pokémons h3 {
+    color: #3B00DB;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+
+#pokémons img {
+    width: 150px;
+    height: auto;
+    box-shadow: 0 0 30px #273BE2;
+    margin: .5rem;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #FFFFE0;
+    font-family: 'Lobster', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+#logo img {
+    display: block;
+    margin: auto;
+}
